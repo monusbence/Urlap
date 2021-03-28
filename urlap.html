@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <link rel="stylesheet" href="urlap.css">
+</head>
+
+<body>
+    <form name="rendeles">
+        <h1>Alapadatok</h1>
+        <fieldset>
+            <p><label>Teljes neved:<input type="text" name="nev">
+                </label></p>
+            <p><label>Nemed:
+                    <input type="radio" id="férfi" name="gender" value="férfi">
+                    <label for="férfi">Férfi</label>
+                    <input type="radio" id="nő" name="gender" value="nő">
+                    <label for="nő">Nő</label><br>
+                </label></p>
+            <p><label>E-mail:<input type="email" name="email" required></label></p>
+            <p><label>Telefonszám:<input type="tel" name="telefon" required></label></p>
+            <p><label>Levelezés alapértelmezett nyelve:<input type="text" name="valasztas" list="nyelvek" required></label></p>
+            <datalist id="nyelvek">
+                <option value="Magyar">
+                <option value="Angol">
+                <option value="Orosz">
+                <option value="Román">
+                <option value="Német">
+            </datalist>
+            <p>
+                <label>
+                    Születési idő:<input type="date" type="month" type="week">
+                </label>
+            </p>
+            <input type="submit" name="kuldes" value="Mentés" class="button">
+        </fieldset>
+    </form>
+</body>
+
+</html>
